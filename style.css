@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@0,300;0,400;0,700;1,100&family=Montserrat:wght@200&family=Open+Sans:wght@300;400&family=Poppins&family=Quicksand:wght@300;400;500;600&family=Viga&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Open Sans, sans-serif;
+}
+
+/* Notification Panel */
+.notification {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.notification-panel {
+  width: 680px;
+  margin: auto;
+  text-align: left;
+  display: flex;
+}
+
+.notification-panel span {
+  color: #007bc1;
+}
+
+.notification-panel button {
+  width: 95px;
+  height: 35px;
+  background-color: #007bc1;
+  border: none;
+  border-radius: 3px;
+  margin: auto;
+  margin-left: 30px;
+}
+
+.notification-panel a {
+  text-decoration: none;
+  color: white;
+}
+
+button .notification-panel:hover {
+  background-color: white;
+  text-decoration-color: black;
+}
+
+/* Header */
+.header {
+  background-image: url(assets/img/work-desk__dustin-lee.jpg);
+  background-size: cover;
+  height: 675px;
+  position: relative;
+  display: flex;
+}
+
+.header .hero-shot {
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 74, 117, 0.7);
+  position: absolute;
+  bottom: 0;
+}
+
+.hero-shot img {
+  position: relative;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  margin-top: -130px;
+  padding-left: 35px;
+  border-style: none;
+  float: left;
+  z-index: 2;
+}
+
+.hero-shot p {
+  font-size: 17px;
+}
+
+.hero-shot {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.hero-shot,
+h3 {
+  color: white;
+  font-size: 25px;
+  z-index: 1;
+}
+
+.header button {
+  width: 180px;
+  height: 40px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+}
+
+.header button:hover {
+  background-color: white;
+  color: #007bc1;
+}
+
+/* Highlight */
+.highlight-panel {
+  background-color: #e5e5e5;
+  margin-top: -50px;
+  padding-top: 70px;
+}
+
+div.highlight {
+  margin-top: 70px;
+}
+
+div.section-tittle {
+  text-align: center;
+  width: 520px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.highlight-tiles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #cccccc;
+  margin: 5px auto;
+  margin-top: 20px;
+  padding: 0 15px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.row img {
+  width: 25px;
+  height: 25px;
+  float: right;
+  position: relative;
+  margin-top: 18px;
+}
+
+/* Newslatter */
+.newslatter {
+  width: 570px;
+  height: 200px;
+  background-color: rgba(0, 123, 193, 0.9);
+  position: relative;
+  margin-top: -200px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container-newslatter {
+  padding: 10px 15px;
+  color: white;
+}
+
+.container-newslatter p {
+  font-size: 14px;
+}
+
+.container-newslatter input {
+  width: 400px;
+  height: 25px;
+}
+
+.container-newslatter button {
+  float: right;
+  border: none;
+  background: none;
+}
+
+.container-newslatter img {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  float: right;
+}
+
+button.btn-newslatter {
+  height: 30px;
+  background-color: #ff8000;
+  border: none;
+  color: white;
+  margin-left: 7px;
+}
+
+/* Footer */
+.container-footer {
+  max-width: 100%;
+  height: 50px;
+  background-color: #004a75;
+  display: flex;
+}
+
+footer {
+  margin: auto;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  /* Header */
+  .header img {
+    width: 40px;
+    height: 40px;
+    margin-top: -50px;
+    margin-left: -80px;
+  }
+
+  .header .hero-shot {
+    width: 350px;
+  }
+
+  .hero-shot,
+  h3 {
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+  }
+
+  .hero-shot p {
+    font-size: 20px;
+  }
+
+  /* Notification Panel */
+  .notification-panel {
+    width: 380px;
+    height: 135px;
+    text-align: left;
+    padding: 0 10px;
+    display: inline-block;
+  }
+
+  .notification-panel p {
+    font-size: 15px;
+  }
+
+  .notification-panel button {
+    width: 55px;
+    height: 35px;
+  }
+
+  /* Highlight Panel */
+  section.highlight-panel {
+    width: 100%;
+  }
+  div.section-tittle {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+  }
+
+  .row {
+    width: 330px;
+    height: 240px;
+  }
+
+  /* Newalatter */
+  .newslatter {
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 123, 193, 0.9);
+    position: relative;
+    margin-top: -200px;
+  }
+
+  .form input {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    z-index: 1;
+  }
+
+  .form button {
+    width: 445px;
+    height: 25px;
+    z-index: 1;
+  }
+
+  /* footer */
+  footer {
+    margin: auto;
+    color: white;
+    font-size: 12px;
+  }
+}
